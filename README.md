@@ -7,7 +7,7 @@ Here's an example where an opaque black mask and a semitransparent red mask have
 %% Opaque black mask:
 maskoverlay(x,y,mask1) 
 
-% Semitransparent red mask wherever Z is less than -2: 
+% Semitransparent red mask: 
 maskoverlay(x,y,mask2,'color',[1 0 0],'alpha',0.5)
 ```
 
