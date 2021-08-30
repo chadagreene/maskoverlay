@@ -48,7 +48,7 @@ function h = maskoverlay(x,y,tf,varargin)
 narginchk(3,Inf)
 assert(islogical(tf),'Error: tf must be a logical mask.') 
 assert(isvector(x) & isvector(y),'Error: inputs x and y must be 1D vectors.') 
-assert(length(x)==size(tf,2) & length(y)==size(tf,2),'Error: dimesions of tf must match x and y.')
+assert(length(x)==size(tf,2) & length(y)==size(tf,1),'Error: dimesions of tf must match x and y.')
 
 % Set defaults: 
 alpha = 1; 
